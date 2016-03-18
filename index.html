@@ -131,7 +131,7 @@
 <div id="main">
     <div class="music">
         <div id="sound">
-            <audio id="bell" src="" autoplay perload="auto"></audio>
+            <audio id="bell" src="" ></audio>
         </div>
         <div id="music">
             <div id="start"></div>
@@ -176,7 +176,8 @@
             ary.push(Json.music[key]);
 
         }
-bell.src=ary[0];
+        bell.src=ary[0];
+        bell.play();
         musicUl.innerHTML = str;
     }
     bindMusicList();
