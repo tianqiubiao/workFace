@@ -152,13 +152,18 @@
         return jsonLength;
     }
     //绑定音乐列表
-
+    var ary = [];
     function bindMusicList() {
         var musicLists = getJsonLength(Json.music);
         var str = "";
+
         for (var key in Json.music) {
-            str += "<li>" + key + "</li>"
+            str += "<li>" + key + "</li>";
+
+            ary.push(Json.music[key]);
+
         }
+        console.dir(ary);
         musicUl.innerHTML = str;
 
     }
@@ -191,16 +196,25 @@
             var musicList = getEleAll("#musicList>li");
             console.log(musicList);
             for (var i = 0; i < musicList.length; i++) {
-                musicList[i].onclick = function () {
 
-                    for (var key in Json.music) {
-                        bell.src=Json.music[key];
-                    }
-                }
+                    ~function (i) {
+                        musicList[i].onclick = function () {
+                            bell.pause();
+                            bell.src = ary[i];
+                            bell.play();
+                            console.log(ary);
+                            console.log(ary[3]);
+                            console.log(i)
+                        }
+
+                    }(i);
+
+
             }
-
         }
-    };
+
+
+    }
 </script>
 </body>
 </html>
