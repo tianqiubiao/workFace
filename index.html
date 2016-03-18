@@ -163,7 +163,7 @@
             ary.push(Json.music[key]);
 
         }
-        console.dir(ary);
+        
         musicUl.innerHTML = str;
 
     }
@@ -199,12 +199,14 @@
 
                     ~function (i) {
                         musicList[i].onclick = function () {
-                            bell.pause();
+                           bell.pause();
                             bell.src = ary[i];
+                            musicUl.style.display = "none";
+                            controlMusicUl.style.display = "block";
                             bell.play();
-                            console.log(ary);
-                            console.log(ary[3]);
-                            console.log(i)
+                            sound.style.webkitAnimation = "circle 1.5s infinite linear";
+                            start.style.display = "none";
+                            end.style.display = "block";
                         }
 
                     }(i);
