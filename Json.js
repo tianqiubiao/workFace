@@ -1,15 +1,15 @@
 var Json =
 {
     "music": {
-        "雪-杜雯媞王艺翔": "http://mc.djkk.com/mix/2011/2011-04/2011-04-19/g0.wma"
+        "雪-杜雯媞王艺翔": "http://mp3.haoduoge.com/music7/242944.mp3"
         ,
-        "不醉不会-徐佳莹": "music/徐佳莹 - 不醉不会.mp3",
-        "洋葱-杨宗纬": "music/杨宗纬 - 洋葱.mp3",
+        "不醉不会-徐佳莹": "http://mp3.haoduoge.com/music7/242949.mp3",
+        "洋葱-杨宗纬": "http://mp3.haoduoge.com/music7/242948.mp3",
 
-        "演员-薛之谦": "music/薛之谦 - 演员.mp3"
+        "演员-薛之谦": "http://mp3.haoduoge.com/music7/242947.mp3"
         ,
 
-        "夏洛特烦恼-金志文": "music/金志文 - 夏洛特烦恼.mp3"
+        "夏洛特烦恼-金志文": "http://mp3.haoduoge.com/music7/242946.mp3"
     }
 
 };
